@@ -16,3 +16,13 @@ namespace stb_image {
 // stb_image::stbi_load([FileManager::path(@"test.png") UTF8String],&w,&h,&bpp,4);
 // stb_image::stbi_write_png([path UTF8String],w,h,4,(void const*)dst,w<<2);
 ```
+
+```
+dispatch_group_t _group = dispatch_group_create();
+dispatch_queue_t _queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH,0);
+                
+dispatch_group_async(_group,_queue,^{
+});
+
+dispatch_group_wait(_group,DISPATCH_TIME_FOREVER);]
+```
