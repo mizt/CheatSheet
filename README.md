@@ -11,7 +11,6 @@ namespace stb_image {
     #import "stb_image.h"
     #import "stb_image_write.h"
 }
-#endif
 
 // stb_image::stbi_load("src.png",&w,&h,&bpp,4);
 // stb_image::stbi_write_png("dst.png",w,h,4,(void const*)dst,w<<2);
