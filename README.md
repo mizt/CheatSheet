@@ -23,3 +23,29 @@ dispatch_group_async(_group,_queue,^{
 });
 dispatch_group_wait(_group,DISPATCH_TIME_FOREVER);
 ```
+
+```
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+		<script type="importmap">
+			{
+				"imports": {
+					"three":"https://unpkg.com/three@0.164.1/build/three.module.js",
+					"three/addons/":"https://unpkg.com/three@0.164.1/examples/jsm/"
+				}
+			}
+		</script>
+		<script type="module">
+			
+			import * as THREE from "three"
+			
+		</script>
+	</body>
+</html>
+```
